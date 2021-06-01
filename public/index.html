@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+
+		<title>Library</title>
+	</head>
+	<body>
+		
+		<div class="bg-primary text-white jumbotron jumbotron-fluid">
+			<div
+				class="
+					container
+					d-flex
+					flex-column
+					justify-content-center
+					align-items-center
+				"
+			>
+				<h1 class="display-4">Library</h1>
+				<p class="lead">
+					Welcome to your own personalized Library locker, store your favorite
+					books and never lose track!
+				</p>
+			</div>
+		</div>
+
+		<form class="main-form">
+			<div class="container">
+				<div class="form-row justify-content-center align-items-center">
+					<div class="col-sm-3 my-1">
+						<label class="sr-only" for="inlineFormInputName">Book</label>
+						<input
+							type="text"
+							class="form-control"
+							id="inlineFormInputName"
+							placeholder="Book"
+							data-book-input
+						/>
+					</div>
+					<div class="col-sm-3 my-1">
+						<label class="sr-only" for="inlineFormInputGroupUsername"
+							>Author</label
+						>
+						<div class="input-group">
+							<input
+								type="text"
+								class="form-control"
+								id="inlineFormInputGroupUsername"
+								placeholder="Author"
+								data-author-input
+							/>
+						</div>
+					</div>
+
+					<div class="col-auto my-1">
+						<select
+							data-select-input
+							class="custom-select mr-sm-2"
+							id="inlineFormCustomSelect"
+						>
+							<option value="Read">Read</option>
+							<option value="Not Read">Not Read</option>
+						</select>
+					</div>
+					<div class="col-auto my-1">
+						<button type="submit" class="btn btn-primary" data-submit>
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<div class="container justify-content-center align-items-center">
+			<table class="table">
+				<thead class="thead-light">
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Book</th>
+						<th scope="col">Author</th>
+						<th scope="col">Status</th>
+						<th scope="col"></th>
+					</tr>
+				</thead>
+				<tbody class="tbody"></tbody>
+			</table>
+		</div>
+
+		<script src="./scripts/index-bundle.js"></script>
+	</body>
+</html>
